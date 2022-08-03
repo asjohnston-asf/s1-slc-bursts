@@ -1,0 +1,221 @@
+{
+  "ShortName": "S1_SLC_BURSTS",
+  "Version": "1",
+  "EntryTitle": "Sentinel-1 Single Look Complex (SLC) Bursts",
+  "Abstract": "Sentinel-1 slant-range product burst. Created by Andrew Johnston (asjohnston) 2022-07-11. Can be thrown away at any time.",
+  "DOI": {
+    "MissingReason": "Unknown",
+    "Explanation": "It is unknown if this record has a DOI."
+  },
+  "DataCenters": [
+    {
+      "Roles": [
+        "PROCESSOR"
+      ],
+      "ShortName": "ESA/CS1CGS"
+    },
+    {
+      "Roles": [
+        "ARCHIVER",
+        "DISTRIBUTOR"
+      ],
+      "ShortName": "ASF",
+      "ContactInformation": {
+        "ContactMechanisms": [
+          {
+            "Type": "Telephone",
+            "Value": "907-474-5041"
+          },
+          {
+            "Type": "Email",
+            "Value": "uso@asf.alaska.edu"
+          }
+        ]
+      }
+    }
+  ],
+  "ProcessingLevel": {
+    "Id": "Not provided"
+  },
+  "ScienceKeywords": [
+    {
+      "Category": "EARTH SCIENCE",
+      "Topic": "AGRICULTURE",
+      "Term": "FOREST SCIENCE",
+      "VariableLevel1": "REFORESTATION"
+    }
+  ],
+  "TemporalExtents": [
+    {
+      "PrecisionOfSeconds": 1,
+      "EndsAtPresentFlag": true,
+      "RangeDateTimes": [
+        {
+          "BeginningDateTime": "2014-06-15T00:00:00.000Z"
+        }
+      ]
+    }
+  ],
+  "SpatialExtent": {
+    "HorizontalSpatialDomain": {
+      "Geometry": {
+        "CoordinateSystem": "CARTESIAN",
+        "BoundingRectangles": [
+          {
+            "WestBoundingCoordinate": -180.0,
+            "NorthBoundingCoordinate": 90.0,
+            "EastBoundingCoordinate": 180.0,
+            "SouthBoundingCoordinate": -90.0
+          }
+        ]
+      }
+    },
+    "GranuleSpatialRepresentation": "GEODETIC"
+  },
+  "Platforms": [
+    {
+      "Type": "Earth Observation Satellites",
+      "ShortName": "Sentinel-1A",
+      "LongName": "Sentinel-1A",
+      "Instruments": [
+        {
+          "ShortName": "C-SAR",
+          "LongName": "C-Band Synthetic Aperture RADAR",
+          "ComposedOf": [
+            {
+              "ShortName": "EW"
+            },
+            {
+              "ShortName": "IW"
+            }
+          ],
+          "OperationalModes": [
+            "Arctic",
+            "Antarctic"
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "Earth Observation Satellites",
+      "ShortName": "Sentinel-1B",
+      "LongName": "Sentinel-1B",
+      "Instruments": [
+        {
+          "ShortName": "C-SAR",
+          "LongName": "C-Band Synthetic Aperture RADAR",
+          "ComposedOf": [
+            {
+              "ShortName": "EW"
+            },
+            {
+              "ShortName": "IW"
+            }
+          ],
+          "OperationalModes": [
+            "Arctic",
+            "Antarctic"
+          ]
+        }
+      ]
+    }
+  ],
+  "AdditionalAttributes": [
+    {
+      "Name": "POLARIZATION",
+      "Description": "VV, VH, HH, or HV",
+      "DataType": "STRING"
+    },
+    {
+      "Name": "BEAM_MODE",
+      "Description": "IW or EW",
+      "DataType": "STRING"
+    },
+    {
+      "Name": "BEAM_MODE_TYPE",
+      "Description": "IW or EW",
+      "DataType": "STRING"
+    },
+    {
+      "Name": "ASCENDING_DESCENDING",
+      "Description": "ASCENDING or DESCENDING",
+      "DataType": "STRING"
+    },
+    {
+      "Name": "PATH_NUMBER",
+      "Description": "aka Relative Orbit. 1-175",
+      "DataType": "INT"
+    },
+    {
+      "Name": "RELATIVE_BURST_ID",
+      "Description": "aka Burst ID. 1-375,887 for IW; 1-341,235 for EW",
+      "DataType": "INT"
+    },
+    {
+      "Name": "SWATH",
+      "Description": "IW1, IW2, IW3, EW1, EW2, EW3, EW4, or EW5",
+      "DataType": "STRING"
+    },
+    {
+      "Name": "GROUP_ID",
+      "Description": "relative_burst_id + swath",
+      "DataType": "STRING"
+    },
+    {
+      "Name": "PROCESSING_TYPE",
+      "Description": "S1_SLC_BURSTS",
+      "DataType": "STRING"
+    },
+    {
+      "Name": "SOURCE_SLC",
+      "Description": "identifier of the source SLC",
+      "DataType": "STRING"
+    },
+    {
+      "Name": "SV_POSITION_POST",
+      "Description": "baseline tool metadata",
+      "DataType": "STRING"
+    },
+    {
+      "Name": "SV_POSITION_PRE",
+      "Description": "baseline tool metadata",
+      "DataType": "STRING"
+    },
+    {
+      "Name": "SV_VELOCITY_POST",
+      "Description": "baseline tool metadata",
+      "DataType": "STRING"
+    },
+    {
+      "Name": "SV_VELOCITY_PRE",
+      "Description": "baseline tool metadata",
+      "DataType": "STRING"
+    },
+    {
+      "Name": "LOOK_DIRECTION",
+      "Description": "baseline tool metadata",
+      "DataType": "STRING"
+    },
+    {
+      "Name": "CENTER_LAT",
+      "Description": "baseline tool metadata",
+      "DataType": "FLOAT"
+    },
+    {
+      "Name": "CENTER_LON",
+      "Description": "baseline tool metadata",
+      "DataType": "FLOAT"
+    },
+    {
+      "Name": "ASC_NODE_TIME",
+      "Description": "baseline tool metadata",
+      "DataType": "STRING"
+    }
+  ],
+  "CollectionProgress": "ACTIVE",
+  "MetadataSpecification": {
+    "URL": "https://cdn.earthdata.nasa.gov/umm/collection/v1.17.1",
+    "Name": "UMM-C",
+    "Version": "1.17.1"
+  }
+}
