@@ -11,4 +11,4 @@ Creates a S1_SLC_BURSTS collection in CMR UAT for S1 IW SLCs covering the Galapa
    1. `metadata.py` requires an `asf-urs` cookie, `metadata_s3.py` requires AWS access keys
 1. Run `cmr_granules.py` to generate umm_json metdata records for all granules since 2021-11-11 (when burst IDs started being included in SLC metadata)
 1. Run `publish_to_cmr.py` to publish the collection record (`cmr/S1_SLC_BURSTS.json`) and all granule records to CMR
-  1. requires an ECHO token, see https://wiki.earthdata.nasa.gov/display/ED/CMR+Data+Partner+User+Guide#CMRDataPartnerUserGuide-ToCreateaToken
+   1. requires an ECHO token, see https://wiki.earthdata.nasa.gov/display/ED/CMR+Data+Partner+User+Guide#CMRDataPartnerUserGuide-ToCreateaToken
