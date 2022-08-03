@@ -2,7 +2,9 @@
 
 Creates a S1_SLC_BURSTS collection in CMR UAT for S1 IW SLCs covering the Galapagos Islands
 
-1. `conda create -f environment.yml`
+1. Set up the python environement
+   1. `conda env create -f environment.yml`
+   1. `conda activate s1-slc-bursts`
 1. Run `cmr_search.py` to save all CMR umm_json metadata for  S1 IW SLCs over the Galapgos to disk
 1. Download and extract https://sar-mpc.eu/files/S1_burstid_20220530.zip
    1. unzip the .kmz files to .kml format

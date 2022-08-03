@@ -6,7 +6,8 @@ dependencies:
   - python=3.9
   - pip
   - requests
-  - aws_requests_auth
-  - remotezip
   - shapely
   - tqdm
+  - pip:
+    - aws_requests_auth
+    - remotezip
