@@ -1,0 +1,12 @@
+name: s1-slc-bursts
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.9
+  - pip
+  - requests
+  - aws_requests_auth
+  - remotezip
+  - shapely
+  - tqdm
